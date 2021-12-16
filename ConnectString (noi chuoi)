@@ -1,0 +1,23 @@
+public class ConnectString 
+{
+
+	public static void main(String[] args) 
+	{
+		String a = "Pham ";
+		String b = " Minh ";
+		String c = " Duc";
+		
+		String connect = a + b + c;
+		
+		//way 1
+		System.out.println(connect);
+		
+		//way 2: use s1.concat(s2)
+		String connect1= a.concat(b);
+		String connect2 = connect1.concat(c);
+		System.out.println(connect2);
+		
+
+	}
+
+}
