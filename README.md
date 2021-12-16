@@ -1,2 +1,2 @@
 # Charater
-Kĩ thuật lập trình chuỗi !!!
+Kĩ thuật lập trình chuỗi kí tự !!!
