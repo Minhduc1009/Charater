@@ -1,0 +1,14 @@
+public static String amendTheSentence(String s) {
+		String temp=""; // tao mot bien tam
+		
+		for (int i = 0; i < s.length(); i++) {
+			if(s.charAt(i)>= 'A' && s.charAt(i) <= 'Z') { 
+				temp = temp + " " + s.charAt(i); // them khoang trang
+			}else {
+				temp =temp + s.charAt(i);
+			}
+		}
+		String result = temp.toLowerCase(); // dua all ve chua thuong
+		result = result.trim(); // loai bo khoang trang o dau
+		return result;
+	}
