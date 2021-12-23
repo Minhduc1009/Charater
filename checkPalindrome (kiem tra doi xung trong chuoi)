@@ -1,0 +1,27 @@
+\\ hàm
+// cách 1
+public static boolean palindrome(String s) {
+		int n = s.length();
+		for (int i = 0; i <= n/2; i++) {
+			if(s.charAt(i) != s.charAt(n-i-1)) return false;
+		}
+		return true;
+	}
+  
+  // cách 2
+  // use matrix
+  int CheckPalin[1003][1003];
+
+void buildCheck(string S) {
+    int n = S.size();
+    for (int i = n - 1; i >= 0; --i) {
+        CheckPalin[i][i] = 1; // day la TH1
+        for (int j = i + 1; j < n; ++j)
+            CheckPalin[i][j] = (S[i] == S[j]) && (i == j - 1 || CheckPalin[i + 1][j - 1]);
+            // day la TH2
+    }
+}
+
+bool checkSubS(int L, int R) {
+    return CheckPalin[L][R];
+}
