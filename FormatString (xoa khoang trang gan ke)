@@ -1,0 +1,7 @@
+public static String formatString(String s) {
+		String s1 = s.trim();
+	    while(s1.indexOf("  ")!=-1){
+	        s1 = s1.replace("  "," ");
+	    } 
+	    return s1;
+	}
