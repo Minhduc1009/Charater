@@ -1,6 +1,6 @@
 public static String formatString(String s) {
-		String s1 = s.trim();
-	    while(s1.indexOf("  ")!=-1){
+		String s1 = s.trim();  // xoa space đầu và cuối
+	    while(s1.indexOf("  ")!=-1){ // tìm 2 space gần kề
 	        s1 = s1.replace("  "," ");
 	    } 
 	    return s1;
