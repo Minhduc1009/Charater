@@ -1,0 +1,22 @@
+// vd: "aabcc","adcaa" => ket qua: 3 (2:a + 1:c)
+
+	public static int commonCharacterCount(String a, String b) {
+		int count = 0;
+		char[] aArray;
+		char[] bArray;
+		/*bien doi 2 String thanh 2 mang*/
+		aArray = a.toCharArray();
+		bArray = b.toCharArray();
+		
+		for (int i = 0; i < aArray.length; i++) {
+			for (int j = 0; j < bArray.length; j++) {
+				if(aArray[i] == bArray[j]) {
+					count++;
+					/*thay the tat char tai vi tri j = ! de xi k check nua*/
+				    bArray[j] = '!';
+				    break;
+				}
+			}
+		}
+		return count;
+	}
