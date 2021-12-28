@@ -1,0 +1,21 @@
+//vd: "aabbbc" => 2a2bc
+
+public static String lineEncoding(String s) {
+		int count = 1, n = 0;
+		String temp = "";
+		for(int i = 1; i < s.length();i++) {
+			n = i;
+			if(s.charAt(i) == s.charAt(i-1)) count++;
+			else {
+				if(count == 1) temp += s.charAt(i-1);
+				else temp += Integer.toString(count) + s.charAt(i-1);
+				count = 1;
+			}
+		}
+		if(count == 1) temp += s.charAt(n);
+		else {
+			temp += Integer.toString(count) + s.charAt(n);
+			count = 1;
+		}
+		return temp;
+	}
