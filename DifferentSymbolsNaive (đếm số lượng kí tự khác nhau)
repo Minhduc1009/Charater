@@ -1,0 +1,7 @@
+public static int differentSymbolsNaive(String s) {
+		int count = 0;
+		for (char i = 'a'; i <= 'z'; i++) {
+			if(s.indexOf(i) != -1)count++;
+		}
+		return count;
+	}
