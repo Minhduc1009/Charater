@@ -1,4 +1,4 @@
-public static void charactersRearrangement(String s) {
+public static void reverseString(String s) {
 		StringBuilder str = new StringBuilder(s);
 		str.reverse();
 		
