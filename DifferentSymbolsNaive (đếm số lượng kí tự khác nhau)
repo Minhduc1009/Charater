@@ -1,3 +1,10 @@
+/*
+vi du: 
+input: s: "aba"
+
+Expected Output: 2
+*/
+
 public static int differentSymbolsNaive(String s) {
 		int count = 0;
 		for (char i = 'a'; i <= 'z'; i++) {
