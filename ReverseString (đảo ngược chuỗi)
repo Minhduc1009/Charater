@@ -1,0 +1,11 @@
+public static void charactersRearrangement(String s) {
+		StringBuilder str = new StringBuilder(s);
+		str.reverse();
+		
+		System.out.print(str);
+	}
+
+// ham main
+	public static void main(String[] args) {
+		charactersRearrangement("abcd");
+	}
