@@ -1,0 +1,9 @@
+public static boolean charactersRearrangement(String s1, String s2) {
+		char[] a = s1.toCharArray(); // biến chuỗi thành mảng
+		char[] b = s2.toCharArray();
+		
+		Arrays.sort(a); // sắp xếp
+		Arrays.sort(b);
+		
+		return Arrays.equals(a, b); // so sánh hai chuỗi, giống => true, ngược lại => false
+	}
